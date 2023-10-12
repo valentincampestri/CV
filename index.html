@@ -70,20 +70,20 @@
         <section class="filters container">
             <!--=============== FILTERS TABS ===============-->
             <ul class="filters__content">
-                <button class="filters__button" data-target="#AboutMe">
+                <button class="filters__button filter-tab-active" data-target="#AboutMe">
                     About me
                 </button>
                 <button class="filters__button" data-target="#skills">
                     Skills
                 </button>
-                <button class="filters__button filter-tab-active" data-target="#projects">
+                <button class="filters__button" data-target="#projects">
                     Projects
                 </button>
             </ul>
 
             <div class="filters__sections">
                 <!--=============== ABOUT ME ===============-->
-                <div class="about container" data-content id="AboutMe">
+                <div class="about container filters__active" data-content id="AboutMe">
                     <h2 class="about__title">About Me</h2>
                     <p class="about__text">
                         My name is Valentín Campestri, I'm 22 years old, and I live in Argentina. I consider myself a fun and enthusiastic person. I'm specifically focused on backend development because I enjoy working with logic, and I'm eager to expand my knowledge to undertake personal projects.<br><br>
@@ -358,7 +358,7 @@
                 </div>
 
                 <!--=============== PROJECTS ===============-->
-                <div class="projects__content filters__active" data-content id="projects">
+                <div class="projects__content" data-content id="projects">
                     <article class="projects__card">
                         <a target="_blank" href="https://github.com/valentincampestri/SteamTradingCards">
                             <img src="assets/img/STC.jpg" alt="STC" class="projects__img">
