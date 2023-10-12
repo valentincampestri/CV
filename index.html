@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/LogoVC.png" type="image/x-icon">
+
+    <!--=============== REMIX ICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Valentín Campestri</title>
+</head>
+
+<body>
+    <!--=============== HEADER ===============-->
+    <header class="profile container">
+        <!-- Theme button -->
+        <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+        <div class="profile__container grid">
+            <div class="profile__data">
+                <div class="profile__border">
+                    <div class="profile__perfil">
+                        <img src="assets/img/Foto-CV.png" alt="Valentín Campestri profile IMG">
+                    </div>
+                </div>
+
+                <h2 class="profile__name">Valentín Campestri</h2>
+                <h3 class="profile__profession">Software Developer</h3>
+
+                <ul class="profile__social">
+                    <a href="https://www.linkedin.com/in/valentin-campestri/" target="_blank"
+                        class="profile__social-link">
+                        <i class="ri-linkedin-box-line"></i>
+                    </a>
+                    <a href="https://github.com/valentincampestri" target="_blank" class="profile__social-link">
+                        <i class="ri-github-line"></i>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="profile__buttons">
+                <a download="" href="assets/pdf/Valentin Campestri Software Developer.pdf" class="button">
+                    Download CV <i class="ri-download-line"></i>
+                </a>
+
+                <div class="profile__buttons-small">
+                    <a href="https://api.whatsapp.com/send?phone=+5491150280649&text=Hello%20Valent%C3%ADn"
+                        target="_blank"
+                        class="button button__small button__whatsapp">
+                        <i class="ri-whatsapp-line"></i>
+                    </a>
+                    <a href="mailto:dev.valentincampestri@hotmail.com" target="_blank"
+                        class="button button__small button__email">
+                        <i class="ri-mail-line"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+        <section class="filters container">
+            <!--=============== FILTERS TABS ===============-->
+            <ul class="filters__content">
+                <button class="filters__button" data-target="#AboutMe">
+                    About me
+                </button>
+                <button class="filters__button" data-target="#skills">
+                    Skills
+                </button>
+                <button class="filters__button filter-tab-active" data-target="#projects">
+                    Projects
+                </button>
+            </ul>
+
+            <div class="filters__sections">
+                <!--=============== ABOUT ME ===============-->
+                <div class="about container" data-content id="AboutMe">
+                    <h2 class="about__title">About Me</h2>
+                    <p class="about__text">
+                        My name is Valentín Campestri, I'm 22 years old, and I live in Argentina. I consider myself a fun and enthusiastic person. I'm specifically focused on backend development because I enjoy working with logic, and I'm eager to expand my knowledge to undertake personal projects.<br><br>
+                    
+                        I've always been tech-oriented, although after finishing high school, I wasn't exactly sure which path to follow. I embarked on various personal and academic/professional journeys, which eventually eliminated my uncertainty. My path was 100% dedicated to programming. This is because it complements my short and long-term goals perfectly. I'm passionate about it, and I believe it's the future. Additionally, I feel it aligns perfectly with my skills since it focuses on logic and problem-solving. I see development as a tool that allows me to turn my ideas into reality, applying my creativity and ingenuity without any limits. I can start from scratch, working alone, and end up creating something revolutionary, leveraging my abilities and standing out by providing something useful to society (I'd love to see everyone using an app conceived and designed by me). Although I always prefer to work in a team, with trustworthy individuals, to collaborate and create the best possible product. That's when the best results are achieved.<br><br>
+                    
+                        I set my goals according to timeframes. In the short term (now), my objective is to secure a good job as a developer. My goals are to equip myself with as many tools as possible to later use them for independent development, connect with as many people in all the spaces I belong to, learn from them, and eventually find partners to join me on this long-term journey to progress together. Growing professionally is crucial to achieving my medium-term goal.<br><br>
+                    
+                        In the medium term (within 5 years), I aim to be well-established professionally and have accumulated enough knowledge over the years to execute projects that can revolutionize the market, accompanied by a group of individuals I intend to form along the way. I'm realistic and understand that "revolutionizing the market with a product" isn't easy, and there's a significant possibility of failure. That's why I plan to have a safety net in place that will allow me to pursue this possibility without the need to give up important things. This way, I can continue with my life as usual until eventually achieving success.<br><br>
+                    
+                        In the long term (before turning 30), my dream is to come true. When we leave a mark and achieve success, I won't stop. Success motivates me to keep going, which is why I don't set a "final" goal.
+                    </p>
+                    
+                    <!-- Sección Experiencia -->
+                    <div class="experience" id="Experience">
+                        <h2 class="experience__title">Experience</h2>
+                        <!-- Cloud Security Analyst -->
+                        <div class="experience__job">
+                            <img src="assets/img/deloitte-logo.png" alt="Deloitte Logo" class="experience__logo">
+                            <h3 class="experience__position">Cloud Security Analyst</h3>
+                            <p class="experience__company">Deloitte · Full-time</p>
+                            <p class="experience__date">Jan 2023 - Present · 10 mos</p>
+                            <p class="experience__location">Remote</p>
+                            <ul class="experience__details">
+                                <li>AWS, Azure, GCP</li>
+                                <li>Design & Implementation of Cloud Security Architecture</li>
+                                <li>Improve clients’ existing cloud security measures and processes</li>
+                                <li>Prepare reports and documentation of security updates</li>
+                                <li>Automation using Infrastructure as Code and Scripts</li>
+                            </ul>
+                        </div>
+                        <!-- Computer Technician -->
+                        <div class="experience__job">
+                            <img src="assets/img/cosmotech-logo.png" alt="CosmoTech PC Logo" class="experience__logo">
+                            <h3 class="experience__position">Computer Technician</h3>
+                            <p class="experience__company">CosmoTech PC · Self-employed</p>
+                            <p class="experience__date">Jul 2019 - Present · 4 yrs 4 mos</p>
+                            <p class="experience__location">Hybrid</p>
+                            <ul class="experience__details">
+                                <li>Building custom PCs</li>
+                                <li>Hardware and software troubleshooting.</li>
+                                <li>Installation of OS and applications</li>
+                                <li>Cleaning and optimization software</li>
+                            </ul>
+                        </div>
+                        <!-- Functional Analyst Jr -->
+                        <div class="experience__job">
+                            <img src="assets/img/voolkia-logo.png" alt="Voolkia Software & Services Logo" class="experience__logo">
+                            <h3 class="experience__position">Functional Analyst Jr</h3>
+                            <p class="experience__company">Voolkia Software & Services · Full-time</p>
+                            <p class="experience__date">Sep 2020 - Feb 2021 · 6 mos</p>
+                            <p class="experience__location">Remote</p>
+                            <ul class="experience__details">
+                                <li>Matching project for MercadoLibre</li>
+                                <li>Prepare detailed reports</li>
+                                <li>Data Analytics for MercadoLibre Brazil, Mexico, Chile & Colombia</li>
+                                <li>Manual testing QA tasks</li>
+                                <li>Teamwork</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Sección Educación -->
+                    <div class="education" id="Education">
+                        <h2 class="education__title">Education</h2>
+                        <!-- UADE Associate's degree -->
+                        <div class="education__item">
+                            <img src="assets/img/uade-logo.png" alt="UADE Logo" class="education__logo">
+                            <h3 class="education__degree">Associate's degree, Computer Software Engineering</h3>
+                            <p class="education__date">Aug 2022 - Jun 2025</p>
+                        </div>
+                        <!-- Otros detalles de educación -->
+                    </div>
+                    <!-- Sección Licencias y Certificaciones -->
+                    <div class="certifications" id="Certifications">
+                        <h2 class="certifications__title">Licenses & Certifications</h2>
+                        <ul class="certifications__list">
+                            <!-- AWS Certified Cloud Practitioner -->
+                            <li class="certifications__item">
+                                <a href="https://www.credly.com/badges/b64f73b0-18bd-4b90-aac9-6f7e6eb4724d/linked_in_profile" target="_blank">
+                                    <img src="assets/img/aws-logo.png" alt="AWS Logo" class="certifications__logo">
+                                    AWS Certified Cloud Practitioner
+                                </a>
+                            </li>
+                            <!-- Microsoft Certified: Azure AI Fundamentals -->
+                            <li class="certifications__item">
+                                <a href="hhttps://learn.microsoft.com/es-es/users/CampestriValentinJulian-7610/credentials/82FC387082A6E9FC" target="_blank">
+                                    <img src="assets/img/microsoft-logo.png" alt="Microsoft Logo" class="certifications__logo">
+                                    Microsoft Certified: Azure AI Fundamentals
+                                </a>
+                            </li>
+                            <!-- Microsoft Certified: Azure Data Fundamentals -->
+                            <li class="certifications__item">
+                                <a href="https://learn.microsoft.com/es-es/users/campestrivalentinjulian-7610/credentials/1e36cd6b5c9ab91a" target="_blank">
+                                    <img src="assets/img/microsoft-logo.png" alt="Microsoft Logo" class="certifications__logo">
+                                    Microsoft Certified: Azure Data Fundamentals
+                                </a>
+                            </li>
+                            <!-- Microsoft Certified: Azure Fundamentals -->
+                            <li class="certifications__item">
+                                <a href="https://learn.microsoft.com/es-mx/users/campestrivalentinjulian-7610/credentials/eee39231cd824d95" target="_blank">
+                                    <img src="assets/img/microsoft-logo.png" alt="Microsoft Logo" class="certifications__logo">
+                                    Microsoft Certified: Azure Fundamentals
+                                </a>
+                            </li>
+                            <!-- B2 First | Cambridge English -->
+                            <li class="certifications__item">
+                                <a href="https://drive.google.com/file/d/1edTnZqnQ2q9K8z-ULh3sGZ1cNQggioAx/view?usp=sharing" target="_blank">
+                                    <img src="assets/img/cambridge-logo.png" alt="Cambridge Logo" class="certifications__logo">
+                                    B2 First | Cambridge English
+                                </a>
+                            </li>
+                            <!-- TOEFL -->
+                            <li class="certifications__item">
+                                <a href="https://www.ets.org/toefl.html" target="_blank">
+                                    <img src="assets/img/toefl-logo.png" alt="TOEFL Logo" class="certifications__logo">
+                                    TOEFL
+                                </a>
+                            </li>
+                            <!-- Otras certificaciones y licencias -->
+                        </ul>
+                    </div>
+                </div>
+                
+            
+
+                <!--=============== SKILLS ===============-->
+                <div class="skills__content grid" data-content id="skills">
+                    <div class="skills__area">
+                        <h3 class="skills__title">Technologies</h3>
+                        <div class="skills__box">
+                            <div class="skills__group">
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h3 class="skills__name">AWS</h3>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h3 class="skills__name">Azure</h3>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h3 class="skills__name">CSS</h3>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h3 class="skills__name">HTML</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skills__group">
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h3 class="skills__name">Java</h3>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h3 class="skills__name">JavaScript</h3>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h3 class="skills__name">MySQL</h3>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h3 class="skills__name">Python</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="skills__area">
+                        <h3 class="skills__title">Languages</h3>
+                        <div class="skills__box">
+                            <div class="skills__group">
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h3 class="skills__name">Armenian</h3>
+                                        <span class="skills__level">Professional Working Proficiency</span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h3 class="skills__name">English</h3>
+                                        <span class="skills__level">Full professional proficiency</span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h3 class="skills__name">Spanish</h3>
+                                        <span class="skills__level">Native</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="skills__area">
+                        <h3 class="skills__title">Methodologies</h3>
+                        <div class="skills__box">
+                            <div class="skills__group">
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h3 class="skills__name">Agile</h3>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h3 class="skills__name">Waterfall</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="skills__area">
+                        <h3 class="skills__title">Tools</h3>
+                        <div class="skills__box">
+                            <div class="skills__group">
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h3 class="skills__name">Github</h3>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h3 class="skills__name">Linux</h3>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h3 class="skills__name">Microsoft Office</h3>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h3 class="skills__name">Windows</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--=============== PROJECTS ===============-->
+                <div class="projects__content filters__active" data-content id="projects">
+                    <article class="projects__card">
+                        <a target="_blank" href="https://github.com/valentincampestri/SteamTradingCards">
+                            <img src="assets/img/STC.jpg" alt="STC" class="projects__img">
+                        </a>
+                        
+                        <div class="projects__modal">
+                            <div>
+                                <h3 class="projects__title">SteamTradingCards</h3>
+                                <p class="projects__description">Programa que automatiza la búsqueda de elementos llamados 'cromos' en la plataforma de juegos Steam; muy útil para realizar búsquedas conjuntas, cuando varios juegos tienen el mismo nombre, o por algún error de algoritmo, no se pueden encontrar manualmente.</p>
+                                <p class="projects__languages">Languages: Python</p>
+                            </div>
+                        </div>
+                    </article>
+                
+                    <article class="projects__card">
+                        <a target="_blank" href="#">
+                            <img src="#" alt="" class="projects__img">
+                        </a>
+                
+                        <div class="projects__modal">
+                            <div>
+                                <h3 class="projects__title">Lorem ipsum</h3>
+                                <p class="projects__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut reiciendis accusantium doloremque laborum ad temporibus rem quas excepturi soluta similique dolor, eligendi eius iste voluptas eaque ex eos accusamus tempora.</p>
+                                <p class="projects__languages">Languages: Javascript</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="projects__card">
+                        <a target="_blank" href="#">
+                            <img src="#" alt="" class="projects__img">
+                        </a>
+                
+                        <div class="projects__modal">
+                            <div>
+                                <h3 class="projects__title">Lorem ipsum</h3>
+                                <p class="projects__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut reiciendis</p>
+                                <p class="projects__languages">Languages: Java</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="projects__card">
+                        <a target="_blank" href="#">
+                            <img src="#" alt="" class="projects__img">
+                        </a>
+                
+                        <div class="projects__modal">
+                            <div>
+                                <h3 class="projects__title">Lorem ipsum</h3>
+                                <p class="projects__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut reiciendis accusantium doloremque laborum ad temporibus rem quas excepturi soluta similique dolor, eligendi eius iste voluptas eaque ex eos accusamus tempora./p>
+                                <p class="projects__languages">Languages: Python</p>
+                            </div>
+                        </div>
+                    </article>
+                
+                    <!-- Agrega proyectos adicionales siguiendo el mismo formato -->
+                </div>
+                                                   
+        </section>
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer container">
+        <span class="footer__copy">
+            &#169; Valentín Campestri. All rigths reserved
+        </span>
+    </footer>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
