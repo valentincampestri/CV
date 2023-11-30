@@ -64,3 +64,40 @@ sr.reveal(`.profile__info-group`, {interval: 100, delay: 700})
 sr.reveal(`.profile__buttons`, {delay: 800})
 sr.reveal(`.filters__content`, {delay: 900})
 sr.reveal(`.filters`, {delay: 1000})
+
+/*=============== CUSTOM JAVASCRIPT FOR EDUCATION SECTION ===============*/
+// Get references to the elements
+const approvedSubjectsBtn = document.getElementById('approvedSubjectsBtn');
+const descriptionsContainer = document.getElementById('approvedSubjectsDescriptions');
+const subjectDescriptions = document.querySelectorAll('.subject-description');
+const modal = document.createElement('div');
+modal.className = 'modal';
+document.body.appendChild(modal);
+
+approvedSubjectsBtn.addEventListener('click', () => {
+    descriptionsContainer.classList.toggle('show-descriptions');
+});
+
+subjectDescriptions.forEach(description => {
+    description.addEventListener('click', () => {
+        // Mostrar modal con el nombre y descripción
+        modal.innerHTML = `
+            <div class="modal-content">
+                <h2>${description.dataset.name}</h2>
+                <p>${description.dataset.description}</p>
+                <button class="button close-btn" onclick="closeModal()">Close</button> 
+            </div>
+        `;
+        setTimeout(() => {
+            modal.style.opacity = '1';
+        }, 50); // Agrega un pequeño retraso antes de mostrar el recuadro
+        modal.style.display = 'block';
+    });
+});
+
+function closeModal() {
+    modal.style.opacity = '0'; // Configura la opacidad a 0 al cerrar
+    setTimeout(() => {
+        modal.style.display = 'none';
+    }, 500); // Ajusta la duración de la transición
+}
