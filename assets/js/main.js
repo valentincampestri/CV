@@ -80,20 +80,24 @@ approvedSubjectsBtn.addEventListener('click', () => {
 
 subjectDescriptions.forEach(description => {
     description.addEventListener('click', () => {
-        // Mostrar modal con el nombre y descripción
-        modal.innerHTML = `
-            <div class="modal-content">
-                <h2>${description.dataset.name}</h2>
-                <p>${description.dataset.description}</p>
-                <button class="button close-btn" onclick="closeModal()">Close</button> 
-            </div>
-        `;
-        setTimeout(() => {
-            modal.style.opacity = '1';
-        }, 50); // Agrega un pequeño retraso antes de mostrar el recuadro
-        modal.style.display = 'block';
+      // Mostrar modal con el nombre y descripción
+      modal.innerHTML = `
+        <div class="modal-content">
+          <h2>${description.dataset.name}</h2>
+          <p>${description.dataset.description}</p>
+          <button class="button close-btn" onclick="closeModal()">Close</button> 
+        </div>
+      `;
+      
+      // Aplica estilos al modal
+      modal.querySelector('.modal-content').style.maxHeight = '70vh';
+      
+      setTimeout(() => {
+        modal.style.opacity = '1';
+      }, 50); // Agrega un pequeño retraso antes de mostrar el recuadro
+      modal.style.display = 'block';
     });
-});
+  });
 
 function closeModal() {
     modal.style.opacity = '0'; // Configura la opacidad a 0 al cerrar
