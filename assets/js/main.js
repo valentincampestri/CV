@@ -56,14 +56,14 @@ const sr = ScrollReveal({
     delay: 400,
 })
 
-sr.reveal(`.profile__border`)
-sr.reveal(`.profile__name`, {delay: 500})
-sr.reveal(`.profile__profession`, {delay: 600})
-sr.reveal(`.profile__social`, {delay: 700})
-sr.reveal(`.profile__info-group`, {interval: 100, delay: 700})
-sr.reveal(`.profile__buttons`, {delay: 800})
-sr.reveal(`.filters__content`, {delay: 900})
-sr.reveal(`.filters`, {delay: 1000})
+sr.reveal(`.profile__border`);
+sr.reveal(`.profile__name`, {delay: 500});
+sr.reveal(`.profile__profession`, {delay: 600});
+sr.reveal(`.profile__social`, {delay: 700});
+sr.reveal(`.profile__info-group`, {interval: 100, delay: 700});
+sr.reveal(`.profile__buttons`, {delay: 800});
+sr.reveal(`.filters__content`, {delay: 900});
+sr.reveal(`.filters`, {delay: 1000});
 
 /*=============== CUSTOM JAVASCRIPT FOR EDUCATION SECTION ===============*/
 // Get references to the elements
@@ -105,3 +105,4 @@ function closeModal() {
         modal.style.display = 'none';
     }, 500); // Ajusta la duración de la transición
 }
+

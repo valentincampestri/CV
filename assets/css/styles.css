@@ -360,16 +360,16 @@ body.dark-theme {
 .experience__title,
 .education__title,
 .certifications__title {
-    font-size: 24px;
-    margin-bottom: 20px;
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
 .experience__job,
 .education__item {
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    padding: 20px;
-    border-radius: 5px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
 }
 
 .subject-descriptions {
@@ -413,43 +413,74 @@ body.dark-theme {
 
 .experience__position,
 .education__degree {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 .experience__company,
 .experience__date,
 .education__university,
 .education__date {
-    font-size: 14px;
-    margin-top: 5px;
-    margin-bottom: 15px;
+  font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.experience__date::before,
+.education__date::before {
+  content: '\1F4C6';
+  margin-right: 0.5rem;
+  font-size: 0.8rem;
 }
 
 .experience__location {
-    font-size: 14px;
-    margin-top: 5px;
-    font-weight: bold;
+  font-size: 14px;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+.experience__location::before,
+.education__location::before {
+  content: '\1F4CC';
+  margin-right: 0.5rem;
+  font-size: 0.8rem;
 }
 
 .experience__details {
-    list-style-type: disc;
-    margin-top: 10px;
-    padding-left: 20px;
+  list-style-type: disc;
+  margin-top: 10px;
+  padding-left: 20px;
 }
 
 .certifications__list {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 
 .certifications__item {
-    font-size: 18px;
-    margin-bottom: 10px;
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 
 .certifications__item a {
-    text-decoration: none;
-    color: var(--text-color);
+  text-decoration: none;
+  color: var(--text-color);
+  position: relative;
+}
+
+.certifications__item a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  height: 2px;
+  width: 0;
+  background-color: var(--first-color);
+  transition: width 0.71s ease;
+  display: block;
+}
+
+.certifications__item a:hover::after {
+  width: 100%;
 }
 
 .certifications__logo,

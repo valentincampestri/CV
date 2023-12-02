@@ -12,6 +12,7 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
     <!--=============== CSS ===============-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
 
     <title>Valentín Campestri</title>
@@ -99,9 +100,9 @@
                     
                     <!-- Sección Experiencia -->
                     <div class="experience" id="Experience">
-                        <h2 class="experience__title">Experience</h2>
+                        <h2 class="experience__title" data-aos="fade-right" data-aos-duration="2000">Experience</h2>
                         <!-- Cloud Security Analyst -->
-                        <div class="experience__job">
+                        <div class="experience__job" data-aos="fade-right" data-aos-duration="2000">
                             <a href="https://www.deloitte.com/global/en.html" target="_blank">
                                 <img src="assets/img/deloitte-logo.png" alt="Deloitte Logo" class="experience__logo">
                             </a>
@@ -118,7 +119,7 @@
                             </ul>
                         </div>
                         <!-- Computer Technician -->
-                        <div class="experience__job">
+                        <div class="experience__job" data-aos="fade-left" data-aos-duration="2000">
                             <a href="https://www.instagram.com/cosmotechpc" target="_blank">
                                 <img src="assets/img/cosmotech-logo.png" alt="CosmoTech PC Logo" class="experience__logo">
                             </a>
@@ -134,7 +135,7 @@
                             </ul>
                         </div>
                         <!-- Functional Analyst Jr -->
-                        <div class="experience__job">
+                        <div class="experience__job" data-aos="fade-right" data-aos-duration="2000">
                             <a href="https://www.voolkia.com/" target="_blank">
                                 <img src="assets/img/voolkia-logo.png" alt="Voolkia Software & Services Logo" class="experience__logo">
                             </a>
@@ -153,9 +154,9 @@
                     </div>
                     <!-- Sección Educación -->
                     <div class="education" id="Education">
-                        <h2 class="education__title">Education</h2>
+                        <h2 class="education__title" data-aos="fade-left" data-aos-duration="2000">Education</h2>
                         <!-- UADE Associate's degree -->
-                        <div class="education__item">
+                        <div class="education__item" data-aos="fade-left" data-aos-duration="2000">
                             <a href="https://www.uade.edu.ar/facultad-de-ingenieria-y-ciencias-exactas/tecnicatura-universitaria-en-desarrollo-de-software/" target="_blank">
                                 <img src="assets/img/uade-logo.png" alt="UADE Logo" class="education__logo">
                                 <h3 class="education__degree">Associate's degree, Computer Software Engineering</h3>
@@ -212,7 +213,7 @@
                                     </div>
 
                                     <div class="subject-description" data-name="DATA ENGINEERING I" data-description="CONCEPTS OF DATABASE DESIGN, ADMINISTRATION, AND MANAGEMENT. FUNCTIONAL AND MULTIFUNCTIONAL DEPENDENCIES. STORAGE. DATA INDEPENDENCE. DATABASE MODELS. RELATIONAL MODEL. TABULAR GROUPING CONCEPT. RELATIONAL ALGEBRA. NORMALIZATION CONCEPT. HIGHER NORMAL FORMS. FUNCTIONAL DEPENDENCIES. ARMSTRONG'S AXIOMS. SECURITY. SQL AND PROCEDURAL EXTENSIONS.">
-                                        <span class="subject-name">DATA ENGINEERING I</span>
+                                        <span class="subject-name">INTRODUCTION TO ALGORITHMS</span>DATA ENGINEERING I
                                     </div>
                                 </div>
                             </div>
@@ -220,7 +221,7 @@
                     </div>
 
                     <!-- Sección Licencias y Certificaciones -->
-                    <div class="certifications" id="Certifications">
+                    <div class="certifications" id="Certifications" data-aos="fade-right" data-aos-duration="2000">
                         <h2 class="certifications__title">Licenses & Certifications</h2>
                         <ul class="certifications__list">
                             <!-- AWS Certified Cloud Practitioner -->
@@ -416,7 +417,7 @@
 
                 <!--=============== PROJECTS ===============-->
                 <div class="projects__content" data-content id="projects">
-                    <article class="projects__card">
+                    <article class="projects__card" data-aos="fade-right">
                         <a target="_blank" href="https://github.com/lucasbianchi0/sistema-proveedores">
                             <img src="assets/img/InvoiceSystem2023.jpg" alt="Invoice System 2023" class="projects__img">
                             <div class="projects__modal">
@@ -429,7 +430,7 @@
                         </a>
                     </article>
 
-                    <article class="projects__card">
+                    <article class="projects__card" data-aos="fade-right">
                         <a target="_blank" href="https://github.com/valentincampestri/CV">
                             <img src="assets/img/PersonalWebsite.png" alt="Personal Website" class="projects__img">
                             <div class="projects__modal">
@@ -442,7 +443,7 @@
                         </a>
                     </article>
 
-                    <article class="projects__card">
+                    <article class="projects__card" data-aos="fade-right">
                         <a target="_blank" href="https://github.com/valentincampestri/SteamTradingCards">
                             <img src="assets/img/STC.jpg" alt="STC" class="projects__img">
                             <div class="projects__modal">
@@ -454,22 +455,7 @@
                             </div>
                         </a>
                     </article>
-                    
-                    <!-- Agrega proyectos adicionales siguiendo el mismo formato
-                    <article class="projects__card">
-                        <a target="_blank" href="#">
-                            <img src="#" alt="" class="projects__img">
-                            <div class="projects__modal">
-                                <div>
-                                    <h3 class="projects__title">Lorem ipsum</h3>
-                                    <p class="projects__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut reiciendis accusantium doloremque laborum ad temporibus rem quas excepturi soluta similique dolor, eligendi eius iste voluptas eaque ex eos accusamus tempora.</p>
-                                    <p class="projects__languages">Languages: Javascript</p>
-                                </div>
-                            </div>
-                        </a>
-                    </article>
-                
-                    -->
+
                 </div>
                                                    
         </section>
@@ -485,8 +471,12 @@
     <!--=============== SCROLLREVEAL ===============-->
     <script src="assets/js/scrollreveal.min.js"></script>
 
+    <!--=============== AOS ===============-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
