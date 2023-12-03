@@ -106,3 +106,7 @@ function closeModal() {
     }, 500); // Ajusta la duración de la transición
 }
 
+AOS.init({
+  once: true, // Solo anima una vez
+  duration: 1200, // Duración de la animación en milisegundos
+});
