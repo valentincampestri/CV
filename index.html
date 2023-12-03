@@ -21,8 +21,21 @@
 <body>
     <!--=============== HEADER ===============-->
     <header class="profile container">
-        <!-- Theme button -->
-        <i class="ri-moon-line change-theme" id="theme-button"></i>
+        <div id="color-picker-container">
+            <!-- Theme button -->
+            <i class="ri-moon-line change-theme" id="theme-button"></i>
+            <!-- Color picker -->
+            <i class="ri-palette-line change-theme change-color" id="color-picker-icon"></i>
+            <div id="color-menu" class="color-menu">
+              <ul>
+                <li class="color-option" data-color="var(--first-color)" data-color-alt="var(--first-color-alt)"></li>
+                <li class="color-option" data-color="var(--second-color)" data-color-alt="var(--second-color-alt)"></li>
+                <li class="color-option" data-color="var(--third-color)" data-color-alt="var(--third-color-alt)"></li>
+                <li class="color-option" data-color="var(--fourth-color)" data-color-alt="var(--fourth-color-alt)"></li>
+                <li class="color-option" data-color="var(--fifth-color)" data-color-alt="var(--fifth-color-alt)"></li>
+              </ul>
+            </div>
+          </div>
 
         <div class="profile__container grid">
             <div class="profile__data">

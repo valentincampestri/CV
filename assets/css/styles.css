@@ -6,9 +6,19 @@
   /*========== Colors ==========*/
   --hue: 207;
   --sat: 90%;
-  --lig: 61%;
+  --lig: 61%;  
   --first-color: #8A2BE2; /* Violeta */
   --first-color-alt: #6D1D9E;
+  --second-color: #FF0000; /* Rojo */
+  --second-color-alt: #990000;
+  --third-color: #0066FF; /* Azul */
+  --third-color-alt: #004080;
+  --fourth-color: #14C84A; /* Verde */
+  --fourth-color-alt: #0D995F;
+  --fifth-color: #EE00FF; /* Rosa */
+  --fifth-color-alt: #B600CB;
+  --principal-color: var(--first-color);
+  --principal-color-alt: var(--first-color-alt);
   --title-color: hsl(var(--hue), 12%, 15%);
   --text-color: hsl(var(--hue), 12%, 45%);
   --text-color-light: hsl(var(--hue), 8%, 75%);
@@ -70,19 +80,85 @@ img {
   height: auto;
 }
 
-/*=============== THEME ===============*/
-.change-theme {
+/*=============== THEME & COLOR ===============*/
+#color-picker-container {
+  position: absolute;
+  top: 2.5rem;
+  right: 0;
+  display: flex;
+  align-items: center;
+}
+
+#theme-button,
+#color-picker-icon{
+  font-size: 1.25rem;
+}
+
+#theme-button {
+  margin-right: 0.75rem;
+}
+
+#color-menu {
+  font-size: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
   position: absolute;
   top: 1.5rem;
   right: 0;
-  font-size: 1.25rem;
-  color: var(--title-color);
-  cursor: pointer;
-  transition: .3s;
+  flex-direction: column;
 }
 
-.change-theme:hover {
-  color: var(--first-color);
+.color-option{
+  margin-right: -4px;
+}
+
+/* Cambiar color de los íconos */
+#color-picker-icon:hover,
+#theme-button:hover {
+  color: var(--principal-color);
+}
+
+.color-menu {
+  display: none;
+}
+
+.color-menu.active {
+  display: block;
+}
+
+.color-menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.color-option {
+  width: 20px;
+  height: 20px;
+  margin: 7px 0 0 0;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Agrega estilos de color específicos según tus preferencias */
+.color-option[data-color="var(--first-color)"] {
+  background-color: var(--first-color);
+}
+
+.color-option[data-color="var(--second-color)"] {
+  background-color: var(--second-color);
+}
+
+.color-option[data-color="var(--third-color)"] {
+  background-color: var(--third-color);
+}
+
+.color-option[data-color="var(--fourth-color)"] {
+  background-color: var(--fourth-color);
+}
+
+.color-option[data-color="var(--fifth-color)"] {
+  background-color: var(--fifth-color);
 }
 
 /*========== Variables Dark theme ==========*/
@@ -175,7 +251,7 @@ body.dark-theme {
 }
 
 .profile__border {
-  border: 3.5px solid var(--first-color);
+  border: 3.5px solid var(--principal-color);
   justify-self: center;
   width: 120px;
   height: 120px;
@@ -209,7 +285,7 @@ body.dark-theme {
 }
 
 .profile__social-link:hover {
-  color: var(--first-color);
+  color: var(--principal-color);
 }
 
 .profile__buttons, 
@@ -232,12 +308,12 @@ body.dark-theme {
   display: inline-flex;
   align-items: center;
   column-gap: .5rem;
-  background-color: var(--first-color);
+  background-color: var(--principal-color);
   color: #fff;
   padding: 1.15rem 1.5rem;
   border-radius: .5rem;
   transition: .3s;
-  box-shadow: 0 8px 24px rgba(138, 43, 226, 0.25);
+  box-shadow: 0 3px 24px var(--principal-color-alt);
 }
 
 .button i {
@@ -245,7 +321,7 @@ body.dark-theme {
 }
 
 .button:hover {
-  background-color: var(--first-color-alt);
+  background-color: var(--principal-color-alt);
 }
 
 .button__small {
@@ -361,8 +437,11 @@ body.dark-theme {
 .experience__title,
 .education__title,
 .certifications__title {
+  line-height: 1.5;
   font-size: 24px;
   margin-bottom: 20px;
+  border-bottom: 1px solid var(--principal-color);
+  width: max-content;
 }
 
 .experience__job,
@@ -394,7 +473,7 @@ body.dark-theme {
   content: '\25B8';
   margin-right: 0.75rem;
   font-size: 1rem;
-  color: var(--first-color);
+  color: var(--principal-color);
 }
 
 .subject-name {
@@ -444,6 +523,7 @@ body.dark-theme {
   content: '\1F4CC';
   margin-right: 0.5rem;
   font-size: 0.8rem;
+  color: var(--principal-color);
 }
 
 .experience__details {
@@ -475,7 +555,7 @@ body.dark-theme {
   bottom: -5px;
   height: 2px;
   width: 0;
-  background-color: var(--first-color);
+  background-color: var(--principal-color);
   transition: width 0.71s ease;
   display: block;
 }
@@ -500,7 +580,7 @@ body.dark-theme {
 
 .projects__card {
   flex: 1;
-  border: 1px solid var(--title-color);
+  border: 4px solid var(--principal-color);
   border-radius: 16px;
   overflow: hidden;
   transition: .3s;
@@ -581,7 +661,7 @@ body.dark-theme {
 
 .skills__data i {
   font-size: 1rem;
-  color: var(--first-color);
+  color: var(--principal-color);
 }
 
 .skills__name {
