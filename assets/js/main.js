@@ -132,3 +132,42 @@ function closeModal() {
         modal.style.display = 'none';
     }, 500); // Ajusta la duración de la transición
 }
+
+/*=============== EXPERIENCE DURATION CALCULATION ===============*/
+function calculateExperienceDuration(startDate, endDate = 'present') {
+    const start = new Date(startDate);
+    const end = endDate.toLowerCase() === 'present' ? new Date() : new Date(endDate);
+
+    let years = end.getFullYear() - start.getFullYear();
+    let months = end.getMonth() - start.getMonth();
+
+    // Ajuste si el mes de finalización es anterior al mes de inicio en el año
+    if (months < 0) {
+        years--;
+        months += 12;
+    }
+
+    // Construir el texto de la duración
+    let durationText = '';
+    if (years > 0) {
+        durationText += years + ' yr' + (years > 1 ? 's ' : ' ');
+    }
+    if (months > 0) {
+        durationText += months + ' mo' + (months > 1 ? 's' : '');
+    }
+
+    return durationText.trim();
+}
+
+// Selecciona todas las experiencias laborales
+const experienceJobs = document.querySelectorAll('.experience__job');
+
+experienceJobs.forEach(job => {
+    const startDate = job.dataset.start;
+    const endDate = job.dataset.end;
+    const durationElement = job.querySelector('.experience-duration');
+
+    if (startDate && durationElement) {
+        durationElement.textContent = calculateExperienceDuration(startDate, endDate);
+    }
+});
